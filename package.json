@@ -1,0 +1,36 @@
+{
+  "name": "easypower",
+  "type": "module",
+  "module": "src/lib.ts",
+  "types": "src/lib.d.ts",
+  "main": "dist/lib.js",
+  "version": "0.1.0",
+  "author": {
+    "name": "Bennett",
+    "email": "contact@bennettsh.de",
+    "url": "https://git.bennettsh.de/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.bennettsh.de/easypower.git"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "ky": "^1.7.4"
+  }
+}

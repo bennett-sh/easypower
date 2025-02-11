@@ -1,0 +1,18 @@
+{
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "experimentalTernaries": true,
+  "quoteProps": "consistent",
+  "semi": false,
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "embeddedLanguageFormatting": "auto",
+  "svelteAllowShorthand": true,
+  "svelteBracketNewLine": true,
+  "svelteIndentScriptAndStyle": true,
+  "svelteSortOrder": "options-scripts-markup-styles",
+  "svelteStrictMode": true
+}
