@@ -2,9 +2,10 @@
   "name": "easypower",
   "type": "module",
   "module": "src/lib.ts",
-  "types": "src/lib.d.ts",
+  "types": "dist/lib.d.ts",
+  "typings": "dist/lib.d.ts",
   "main": "dist/lib.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Bennett",
     "email": "contact@bennettsh.de",

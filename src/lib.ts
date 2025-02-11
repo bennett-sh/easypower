@@ -12,14 +12,14 @@ import type {
   YearSystemData,
   MonthSystemData,
   LifetimeSystemData,
-  LifetimeSystemDataRaw,
-  InverterStatisticsRaw,
-  InverterStatistics
+  LifetimeSystemDataRaw
 } from './types'
 import { UnauthorizedError } from './errors'
 import { Inverter } from './inverter'
 
-function getDayStringFromData(date: Date) {
+export type * from './types'
+
+function getDayStringFromDate(date: Date) {
   return `${date.getFullYear()}${date
     .getMonth()
     .toString()
@@ -48,7 +48,7 @@ export class EasyPower {
     if (!this.api) throw new UnauthorizedError()
     return await request<SystemData>(
       this.api.get(
-        `aps-api-web/api/v2/data/system/ezhi/realtime/${systemId}?date=${getDayStringFromData(
+        `aps-api-web/api/v2/data/system/ezhi/realtime/${systemId}?date=${getDayStringFromDate(
           date
         )}`
       )
@@ -62,7 +62,7 @@ export class EasyPower {
     if (!this.api) throw new UnauthorizedError()
     const data = await request<DaySystemDataRaw>(
       this.api.get(
-        `aps-api-web/api/v2/data/system/day/${systemId}/${getDayStringFromData(
+        `aps-api-web/api/v2/data/system/day/${systemId}/${getDayStringFromDate(
           date
         )}`
       )
@@ -93,7 +93,7 @@ export class EasyPower {
     if (!this.api) throw new UnauthorizedError()
     const data = await request<MonthSystemDataRaw>(
       this.api.get(
-        `aps-api-web/api/v2/data/system/month/${systemId}/${getDayStringFromData(
+        `aps-api-web/api/v2/data/system/month/${systemId}/${getDayStringFromDate(
           date
         )}`
       )
@@ -118,7 +118,7 @@ export class EasyPower {
     if (!this.api) throw new UnauthorizedError()
     const data = await request<YearSystemDataRaw>(
       this.api.get(
-        `aps-api-web/api/v2/data/system/year/${systemId}/${getDayStringFromData(
+        `aps-api-web/api/v2/data/system/year/${systemId}/${getDayStringFromDate(
           date
         )}`
       )
