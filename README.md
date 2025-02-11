@@ -1,6 +1,6 @@
 # AP EasyPower
 
-#### Reverse-engineered API from the AP EasyPower app
+#### A library for interacting with the reverse-engineered API from the AP EasyPower app.
 
 ## Installation
 
