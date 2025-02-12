@@ -12,4 +12,4 @@ pnpm install ap-easypower
 
 ## Usage
 
-See [`examples/basic.ts`](https://git.bennettsh.de/easypower/tree/main/examples/basic.ts) for a basic usage example. Docs will be added later on.
+See [`examples/basic.ts`](/examples/basic.ts) for a basic usage example. Docs will be added later on.
