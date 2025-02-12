@@ -154,10 +154,6 @@ export class EasyPower {
     }
   }
 
-  // /data/device/ezInverter/day/channel
-  // /data/device/ezInverter/{id}
-  // sub: ezInverter
-
   getInverter(serialNumber: string): Inverter {
     return new Inverter(this, serialNumber)
   }
