@@ -7,7 +7,7 @@
 To install the package, simply run
 
 ```sh
-pnpm install ap-easypower
+pnpm install easypower
 ```
 
 ## Usage
